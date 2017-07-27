@@ -1,0 +1,167 @@
+body{/*fix fixed-top issude*/
+	padding-top: 50px;
+}
+
+.container-fluid{/*fix for padding left and right, for fluid container not being 100%*/
+	padding: 0 !important;
+}
+
+/*margin/padding top and bottom*/
+.marginElement{
+	margin: 15px 0;
+}
+.paddingSection{
+	padding: 100px 0;
+}
+
+/*MEDIA QUERIES*/
+
+/*extra small*/
+@media(max-width:767px){
+	/*hover blog image*/
+	.blogElement {/*properly sets the workOverlay in the worksElement*/
+		background: #444;
+		-moz-box-shadow: 1px 1px 7px #333;
+		-webkit-box-shadow: 1px 1px 7px #333;
+	    box-shadow: 1px 1px 7px #333;
+	}
+	.blogText {/*centers the text vertical and horizontal*/
+		padding: 15px 25px 25px 25px;
+	}
+	.blog a{
+		text-decoration: none;
+		color: #eee;
+	}
+}
+
+/*small*/
+@media(min-width:768px){
+	/*hover blog image*/
+	.blogElement {/*properly sets the workOverlay in the worksElement*/
+		background: #444;
+		-moz-box-shadow: 1px 1px 7px #333;
+		-webkit-box-shadow: 1px 1px 7px #333;
+	    box-shadow: 1px 1px 7px #333;
+	}
+	.blogText {/*centers the text vertical and horizontal*/
+		padding: 15px 25px 25px 25px;
+	}
+	.blog a{
+		text-decoration: none;
+		color: #eee;
+	}
+}
+
+/*medium*/
+@media(min-width:992px){
+	/*hover blog image*/
+	.blogElement {/*properly sets the workOverlay in the worksElement*/
+	    position: relative;
+	    width: 100%;
+		-moz-transition: .5s ease;
+		-webkit-transition: .5s ease;
+	    -o-transition: .5s ease;
+	    transition: .5s ease;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+	    box-shadow: none;
+	}
+	.blogElement:hover {/*properly sets the workOverlay in the worksElement*/
+		-moz-box-shadow: 1px 1px 7px #333;
+		-webkit-box-shadow: 1px 1px 7px #333;
+	    box-shadow: 1px 1px 7px #333;
+	}
+	.blogOverlay{
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    height: 100%;
+	    width: 100%;
+	    opacity: 0;
+    	filter: Alpha(opacity=0);/*ie*/
+    	moz-transition: .5s ease;
+		-webkit-transition: .5s ease;
+	    -o-transition: .5s ease;
+	    transition: .5s ease;
+	    background-color: #444;
+	}
+	.blogElement:hover .blogOverlay{/*reveals the overlay and text on hover*/
+	    opacity: .9;
+    	filter: Alpha(opacity=90);/*ie*/
+	}
+	.blogText {/*centers the text vertical and horizontal*/
+		padding: 15px 25px 25px 25px;
+	    width: 100%;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+		-moz-transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+	.blog a{
+		text-decoration: none;
+		color: #eee;
+	}
+}
+
+/*large*/
+@media(min-width:1200px){
+	/*hover blog image*/
+	.blogElement {/*properly sets the workOverlay in the worksElement*/
+	    position: relative;
+	    width: 100%;
+		-moz-transition: .5s ease;
+		-webkit-transition: .5s ease;
+	    -o-transition: .5s ease;
+	    transition: .5s ease;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+	    box-shadow: none;
+	}
+	.blogElement:hover {/*properly sets the workOverlay in the worksElement*/
+		-moz-box-shadow: 1px 1px 7px #333;
+		-webkit-box-shadow: 1px 1px 7px #333;
+	    box-shadow: 1px 1px 7px #333;
+	}
+	.blogOverlay{
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    height: 100%;
+	    width: 100%;
+	    opacity: 0;
+    	filter: Alpha(opacity=0);/*ie*/
+    	moz-transition: .5s ease;
+		-webkit-transition: .5s ease;
+	    -o-transition: .5s ease;
+	    transition: .5s ease;
+	    background-color: #444;
+	}
+	.blogElement:hover .blogOverlay{/*reveals the overlay and text on hover*/
+	    opacity: .9;
+    	filter: Alpha(opacity=90);/*ie*/
+	}
+	.blogText {/*centers the text vertical and horizontal*/
+		padding: 15px 25px 25px 25px;
+	    width: 100%;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+		-moz-transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+	.blog a{
+		text-decoration: none;
+		color: #eee;
+	}
+}
